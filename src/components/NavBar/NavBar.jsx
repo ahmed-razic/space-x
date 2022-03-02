@@ -1,7 +1,8 @@
+import { Fragment } from 'react';
 import './style.scss';
 
-function NavBar() {
-  return <div>NavBar</div>;
+function NavBar({ rocket }) {
+  return <Fragment></Fragment>;
 }
 
 export default NavBar;

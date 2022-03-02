@@ -1,7 +1,5 @@
-import './style.scss';
-
 function Rocket() {
-  return <div>Rocket</div>;
+  return null;
 }
 
 export default Rocket;
