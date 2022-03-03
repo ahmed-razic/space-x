@@ -8,6 +8,7 @@ const RocketHeader = ({ id, name }) => {
         backgroundPosition: 'center center',
         backgroundSize: 'cover',
         height: '100vh',
+        color: 'var(--main-light)',
     };
 
     return (

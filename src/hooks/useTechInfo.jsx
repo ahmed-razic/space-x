@@ -3,11 +3,11 @@ function useTechInfo({ name, rocket, engine, isEngine }) {
 
     const firstRow = {
         title: isEngine ? 'NUMBER' : 'HEIGHT',
-        value: isEngine ? engine.number : rocket.height.meters + ' m/' + rocket.height.feet + ' /ft',
+        value: isEngine ? engine.number : rocket.height.meters + ' m/ ' + rocket.height.feet + ' /ft',
     };
     const secondRow = {
         title: isEngine ? 'PROPELLANT1' : 'DIAMETER',
-        value: isEngine ? engine.propellant_1 : rocket.diameter.meters + ' m/' + rocket.diameter.feet + ' /ft',
+        value: isEngine ? engine.propellant_1 : rocket.diameter.meters + ' m/ ' + rocket.diameter.feet + ' /ft',
     };
     const thirdRow = {
         title: isEngine ? 'PROPELLANT2' : 'STAGES',
@@ -19,7 +19,7 @@ function useTechInfo({ name, rocket, engine, isEngine }) {
     };
     const body = [firstRow, secondRow, thirdRow, fourthRow];
 
-    const img = `../assets/${name.replace(/\\s+/g, '')}.png`;
+    const img = `../assets/${name.replace(/\s+/g, '')}.png`;
 
     return { header, body, img };
 }

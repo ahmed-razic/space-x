@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import RocketHeader from '../../components/RocketHeader';
 import TechInfo from '../../components/TechInfo';
+import './style.scss';
 
 const Rocket = ({ rocket }) => {
     const { id, name, height, diameter, stages, cost_per_launch, engines } = rocket;
@@ -10,6 +11,7 @@ const Rocket = ({ rocket }) => {
                 <RocketHeader id={id} name={name} />
                 <TechInfo name={name} rocket={{ height, diameter, stages, cost: cost_per_launch }} />
             </div>
+            <TechInfo name={engines.type} engine={engines} isEngine />
         </Fragment>
     );
 };
