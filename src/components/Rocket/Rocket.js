@@ -11,7 +11,9 @@ const Rocket = ({ rocket }) => {
                 <RocketHeader id={id} name={name} />
                 <TechInfo name={name} rocket={{ height, diameter, stages, cost: cost_per_launch }} />
             </div>
-            <TechInfo name={engines.type} engine={engines} isEngine />
+            <div className="tech-info-background dflex flex-column align-items-center justify-content-around">
+                <TechInfo name={engines.type} engine={engines} isEngine className="tech-info-background" />
+            </div>
         </Fragment>
     );
 };
