@@ -2,15 +2,18 @@
     &__name {
         font-weight: 700;
         font-size: 50px;
+        color: var(--main-light);
     }
 
     &__description {
         font-size: 40px;
+        color: var(--helper-grey);
     }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     .header__description {
         font-size: 25px;
+        color: var(--main-light);
     }
 }
